@@ -9,7 +9,8 @@ import { mockUsers, mockTokens, simulateApiDelay, simulateApiError, addMockUser,
 
 // Use mock data if in development mode or API_URL is not set
 const USE_MOCK_DATA = false;
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+// Update API URL to use Render backend by default
+const API_URL = process.env.REACT_APP_API_URL || 'https://eventmeeting-backend.onrender.com/api';
 
 // Local storage keys
 const USER_KEY = 'cnnct_user';
